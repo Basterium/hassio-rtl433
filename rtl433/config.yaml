@@ -1,0 +1,26 @@
+name: "rtl_433 Custom"
+version: "1.0.0"
+slug: "rtl433_custom"
+description: "Custom rtl_433 Add-on with MQTT support"
+arch:
+  - amd64
+  - armv7
+  - aarch64
+startup: services
+boot: auto
+options:
+  mqtt_host: "mqtt"
+  mqtt_port: 1883
+  mqtt_user: ""
+  mqtt_password: ""
+schema:
+  mqtt_host: str
+  mqtt_port: int
+  mqtt_user: str
+  mqtt_password: str
+init: false
+
+privileged: true
+
+devices:
+  - /dev/bus/usb/001/003
