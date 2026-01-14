@@ -1,5 +1,13 @@
 {
   "name": "RTL_433 Custom Add-on",
   "url": "https://github.com/Basterium/hassio-rtl433",
-  "maintainer": "Basti"
+  "maintainer": "Basti",
+  "addons": [
+    {
+      "slug": "rtl433_custom",
+      "name": "rtl_433 Custom",
+      "description": "Custom rtl_433 Add-on with MQTT support",
+      "repository": "https://github.com/Basterium/hassio-rtl433"
+    }
+  ]
 }
